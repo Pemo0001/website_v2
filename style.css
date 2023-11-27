@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: #333;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  padding: 0 2rem;
+  background-color: #222;
+  z-index: 99;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card1 {
+  display: grid;
+  position: relative;
+  grid-template-columns: 2fr 1fr;
+  margin-top: -3rem;
+  z-index: 999999;
+  filter: drop-shadow(20px 10px 4px #222);
+}
+
+.kolonne1 {
+  background-color: #eee;
+  padding: 3rem;
+}
+
+h2 {
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+footer {
+  background-color: rgba(106, 106, 106, 0.798);
+  font-family: Arial;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "kiln-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  text-align: center;
+}
+
+.headercontainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.menu {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#billedegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0;
+  gap: 20px;
+  z-index: 999999;
+  position: relative;
+  filter: drop-shadow(20px 10px 4px #222);
+}
+
+.billedeogtekst1 p {
+  background-color: #eee;
+  padding: 1.5rem;
+}
+
+.billedeogtekst2 p {
+  background-color: #eee;
+  padding: 1.5rem;
+}
+
+.billedeogtekst3 p {
+  background-color: #eee;
+  padding: 1.5rem;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: #eee;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 60%;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999999999;
+}
+
+video {
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    display: block;
+  }
+
+  #billedegrid {
+    display: block;
+  }
+}
